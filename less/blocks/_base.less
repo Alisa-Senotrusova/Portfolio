@@ -6,6 +6,7 @@ body
 {
   margin: 0;
   padding: 0;
+  overflow-x:hidden;
 }
 
 a, a:hover {text-decoration: none;}
@@ -42,6 +43,47 @@ button
 
 .container
 {
+  position: relative;
   margin: 0 auto;
   max-width: 1140px;
+  z-index: 9;
+
+  @media (max-width: 768px)
+  {
+    max-width: 708px;
+  }
+
+  @media (max-width: 320px)
+  {
+    max-width: 290px;
+  }
+}
+
+.line-bottom
+{
+  position: relative;
+  z-index: 1;
+
+  &::after
+  {
+    position: absolute;
+    z-index: -1;
+
+    content: "";
+    bottom: 20px;
+    right: -5px;
+    left: -5px;
+    height: 12px;
+    background-color: #fbdc4d;
+
+    @media (max-width: 768px)
+    {
+      bottom: 11px;
+    }
+
+    @media (max-width: 320px)
+    {
+      bottom: 8px;
+    }
+  }
 }
