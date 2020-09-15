@@ -48,15 +48,11 @@ button
   max-width: 1140px;
   z-index: 9;
 
-  @media (max-width: 768px)
-  {
-    max-width: 708px;
-  }
+  @media (max-width: 768px) {max-width: 708px;}
 
-  @media (max-width: 320px)
-  {
-    max-width: 290px;
-  }
+  @media (max-width: 540px) {max-width: 480px;}
+
+  @media (max-width: 320px) {max-width: 290px;}
 }
 
 .line-bottom
@@ -70,20 +66,53 @@ button
     z-index: -1;
 
     content: "";
-    bottom: 20px;
+    bottom: 22px;
     right: -5px;
     left: -5px;
     height: 12px;
     background-color: #fbdc4d;
 
-    @media (max-width: 768px)
+    @media (max-width: 1048px) {bottom: 14px;}
+
+    @media (max-width: 768px) {bottom: 8px;}
+
+    @media (max-width: 641px)
     {
-      bottom: 11px;
+      height: 10px;
+      bottom: 5px;
     }
+
+    @media (max-width: 540px) {bottom: 8px;}
 
     @media (max-width: 320px)
     {
+      height: 12px;
       bottom: 8px;
     }
+
+    @media (max-width: 285px) {height: 8px;}
   }
 }
+
+.animate-line
+{
+  position: relative;
+  width: fit-content;
+
+  &::after, &::before
+  {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    height: 4px;
+    background-color: #fbdc4d;
+    width: 0%;
+    transition: 0.5s ease;
+  }
+
+  &::after {right: 50%;}
+
+  &::before {left: 50%;}
+}
+
+.animate-line:hover::after, .animate-line:hover::before {width: 50%;}

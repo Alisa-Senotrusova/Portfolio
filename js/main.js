@@ -8,4 +8,16 @@ $(document).ready(function () {
     mobMenu.classList.toggle('active');
   });
 
-})
+});
+
+$(document).ready(function () {
+
+  let containerEl = document.querySelector('#portfolio-cards');
+
+  let mixer = mixitup(containerEl, {
+    classNames: {
+      block:""
+    }
+  });
+
+});

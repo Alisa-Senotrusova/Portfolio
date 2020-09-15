@@ -1,0 +1,162 @@
+.section-price
+{
+  position: relative;
+
+  padding: 108px 0 90px;
+
+  background-color: #263234;
+  background-image: url(../img/price/price-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::before
+  {
+    display: block;
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.price__content
+{
+  position: relative;
+  z-index: 2;
+}
+
+.section-price__title
+{
+  margin-bottom: 73px;
+
+  text-align: center;
+}
+
+.section-price__title .section-title
+{
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 3.2px;
+}
+
+.section-price__header
+{
+  margin-bottom: 75px;
+
+  text-align: center;
+}
+
+.section-price__header .section-header {color: #fff;}
+
+.prices__wrapper
+{
+  display: flex;
+  justify-content: center;
+}
+
+.price__cell
+{
+  margin-right: 35px;
+  padding: 40px 0;
+  width: 303px;
+
+  color: #fff;
+  text-align: center;
+
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0,0.7);
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+
+  &:last-child {margin-right: 0;}
+
+  &:hover, &:focus {background-color: #2f4cf1;}
+}
+
+.price__cell-top
+{
+  margin-bottom: 34px;
+  padding-bottom: 29px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+.cell__title {margin-bottom: 11px;}
+
+.cell__title-color {color: #b2b2b2;}
+
+.cell__price
+{
+  margin-bottom: 15px;
+
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.cell__price-currency
+{
+  display: inline-block;
+
+
+  padding: 6px;
+  width: 79px;
+  height: 23px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+}
+
+.cell__desc {margin-bottom: 33px;}
+
+.cell__desc li
+{
+  margin-bottom: 21px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  list-style-type: none;
+
+  &:last-child {margin-bottom: 0;}
+}
+
+.cell__button
+{
+  padding: 20px 29px;
+
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 2.4px;
+
+  background-color: rgba(0, 0, 0,0.7);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+
+  transition: background-color 0.2s ease;
+
+  cursor: pointer;
+
+  &:hover, &:focus
+  {
+    color: rgb(102, 102, 102);
+    background-color: rgb(255, 255, 255);
+  }
+}

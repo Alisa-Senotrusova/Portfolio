@@ -19,15 +19,15 @@
         <a href="index.html" class="nav__initials">АС</a>
 
         <ul class="nav__link">
-            <li class="nav__item"><a href="#">Главная</a></li>
-            <li class="nav__item"><a href="#">Работы</a></li>
-            <li class="nav__item"><a href="#">Контакты</a></li>
+            <li class="nav__item animate-line"><a href="#">Главная</a></li>
+            <li class="nav__item animate-line"><a href="#">Работы</a></li>
+            <li class="nav__item animate-line"><a href="#">Контакты</a></li>
         </ul>
 
         <div class="nav__socials">
-          <a href="https://github.com/Alisa-Senotrusova/Portfolio" target="_blank" class="nav__socials-item"><i class="fab fa-github-square fa-3x"></i></a>
-          <a href="https://www.instagram.com/alise_snt/" target="_blank" class="nav__socials-item"><i class="fab fa-instagram fa-3x"></i></a>
-          <a href="https://vk.com/id150794455" target="_blank" class="nav__socials-item"><i class="fab fa-vk fa-3x"></i></a>
+          <a href="https://github.com/Alisa-Senotrusova/Portfolio" target="_blank" class="nav__socials-item"><i class="fab fa-github-square fa-2x"></i></a>
+          <a href="https://www.instagram.com/alise_snt/" target="_blank" class="nav__socials-item"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://vk.com/id150794455" target="_blank" class="nav__socials-item"><i class="fab fa-vk fa-2x"></i></a>
         </div>
 
         <div class="header__toggle-menu">
@@ -87,12 +87,12 @@
             <h3 class="header-bottom__title">На связи:</h3>
 
             <div class="header-contacts__socials">
-              <a href="https://github.com/Alisa-Senotrusova/Portfolio" target="_blank" class="contacts-social__item"><img src="./img/header/icons/github.png" alt=""></a>
-              <a href="https://telegram.im/@ASenotrusova" target="_blank" class="contacts-social__item"><img src="./img/header/icons/telegram.png" alt=""></a>
-              <a href="https://vk.com/id150794455" target="_blank" class="contacts-social__item"><img src="./img/header/icons/vk.png" alt=""></a>
+              <a href="https://telegram.im/@ASenotrusova" target="_blank" class="contacts-social__item"><i class="fab fa-telegram-plane fa-3x"></i></a>
+              <a href="https://wa.me/89832488292" target="_blank" class="contacts-social__item"><i class="fab fa-whatsapp fa-3x"></i></a>
+              <a href="https://vk.com/id150794455" target="_blank" class="contacts-social__item"><i class="fab fa-vk fa-3x"></i></a>
             </div>
 
-            <div class="header-bottom__email">a.senotrusova@gmail.com</div>
+            <a href="mailto:a.senotrusova@gmail.com" class="header-bottom__email">a.senotrusova@gmail.com</a>
 
           </div>
 
@@ -110,76 +110,83 @@
 
           <h2 class="section-portfolio__title">Портфолио</h2>
 
-          <ul class="section-portfolio__nav">
-            <li><a class="portfolio-nav__item" href="#">Все работы</a></li>
-            <li><a class="portfolio-nav__item" href="#">Bootstrap</a></li>
-            <li><a class="portfolio-nav__item" href="#">WordPress</a></li>
-            <li><a class="portfolio-nav__item" href="#">Frontend</a></li>
-          </ul>
+          <div class="section-portfolio__nav">
+            <button class="portfolio-nav__item control-active" data-filter="all">Все работы</button>
+            <button class="portfolio-nav__item" data-filter=".boots">Bootstrap</button>
+            <button class="portfolio-nav__item" data-filter=".wp">WordPress</button>
+            <button class="portfolio-nav__item" data-filter=".fe">Frontend</button>
+          </div>
 
-          <div class="section-portfolio__content">
+          <div class="section-portfolio__content" id="portfolio-cards">
 
-            <div class="portfolio-content__row">
+            <div class="portfolio-content__card mix boots fe">
 
-              <div class="portfolio-content__card">
+                <a href="./projects/Forest-Travel/index.html" target="_blank" class="content-card__img">
+                  <img src="./img/portfolio/portfolio-01.jpg" alt="">
+                  <button class="button-more">Смотреть проект</button>
+                </a>
 
-                <div class="content-card__img"><img src="./img/portfolio/forest-travel.jpeg" alt=""></div>
+                <h3 class="content-card__title">Верстка Форест тревел</h3>
 
-                <h3 class="content-card__title--big">Верстка Форест тревел</h3>
-
-                <div class="content-card__desc--big">Верстка многостраничного сайта.</div>
-
-              </div>
-
-              <div class="portfolio-content__card">
-
-                <div class="content-card__img"><img src="./img/portfolio/dream.jpeg" alt=""></div>
-
-                <h3 class="content-card__title--big">Сайт для коворкинга</h3>
-
-                <div class="content-card__desc--big">Верстка лендинга.</div>
+                <div class="content-card__desc">Верстка многостраничного сайта.</div>
 
               </div>
+
+            <div class="portfolio-content__card mix boots">
+
+              <a href="./projects/UNIT/index.html" target="_blank" class="content-card__img">
+                <img src="./img/portfolio/portfolio-02.jpg" alt="">
+                <button class="button-more">Смотреть проект</button>
+              </a>
+
+              <h3 class="content-card__title">Юнит</h3>
+
+              <div class="content-card__desc">Верстка одностраничного сайта.</div>
 
             </div>
 
-            <div class="portfolio-content__row">
+            <div class="portfolio-content__card mix wp">
 
-              <div class="portfolio-content__card--small">
+                <a href="./projects/Card-Book/index.html" target="_blank" class="content-card__img">
+                  <img src="./img/portfolio/portfolio-04.jpg" alt="">
+                  <button class="button-more">Смотреть проект</button>
+                </a>
 
-                <div class="content-card__img"><img src="./img/portfolio/car-world-01.jpeg" alt=""></div>
+                <h3 class="content-card__title">Карточка</h3>
 
-                <h3 class="content-card__title--small">Верстка Мир Авто</h3>
-
-                <div class="content-card__desc--small">Верстка многостраничного сайта.</div>
-
-              </div>
-
-              <div class="portfolio-content__card--small">
-
-                <div class="content-card__img"><img src="./img/portfolio/car-world-02.jpeg" alt=""></div>
-
-                <h3 class="content-card__title--small">Верстка Мир Авто</h3>
-
-                <div class="content-card__desc--small">Верстка многостраничного сайта.</div>
-
-              </div>
-
-              <div class="portfolio-content__card--small">
-
-                <div class="content-card__img"><img src="./img/portfolio/car-world-03.jpeg" alt=""></div>
-
-                <h3 class="content-card__title--small">Верстка Мир Авто</h3>
-
-                <div class="content-card__desc--small">Верстка многостраничного сайта.</div>
-
-              </div>
+                <div class="content-card__desc">Верстка карточки товара.</div>
 
             </div>
 
-            <a href="#" class="portfolio-content__all">Смотреть все работы</a>
+            <div class="portfolio-content__card mix wp">
+
+                <a href="./projects/Card-Motorbike/index.html" target="_blank" class="content-card__img">
+                  <img src="./img/portfolio/portfolio-05.jpg" alt="">
+                  <button class="button-more">Смотреть проект</button>
+                </a>
+
+                <h3 class="content-card__title">Карточка</h3>
+
+                <div class="content-card__desc">Верстка карточки товара.</div>
+
+            </div>
+
+            <div class="portfolio-content__card mix boots fe">
+
+                <a href="index.html" target="_blank" class="content-card__img">
+                  <img src="./img/portfolio/portfolio-03.jpg" alt="">
+                  <button class="button-more">Смотреть проект</button>
+                </a>
+
+                <h3 class="content-card__title">Портфолио</h3>
+
+                <div class="content-card__desc">Верстка сайта-визитки.</div>
+
+            </div>
 
           </div>
+
+          <a href="#" class="portfolio-content__all">Смотреть все работы</a>
 
         </div>
 
@@ -187,6 +194,7 @@
 
     </main>
 
+    <script src="./libs/mixitup3/mixitup.min.js"></script>
     <script src="./libs/jquery/jquery-3.5.1.min.js"></script>
     <script src="./js/main.js"></script>
 
