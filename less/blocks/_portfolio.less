@@ -4,8 +4,6 @@
 
   background-color: #f4f8f9;
 
-  font-family: "MPLUS 1p";
-
   @media (max-width: 1048px) {padding: 120px 30px 112px;}
 
   @media (max-width: 768px) {padding: 80px 90px 79px;}
@@ -15,61 +13,6 @@
   @media (max-width: 414px) {padding: 61px 30px 97px;}
 
   @media (max-width: 320px) {padding: 61px 15px 97px;}
-}
-
-.section-portfolio__title
-{
-  position: relative;
-  z-index: 2;
-
-  margin-bottom: 66px;
-  width: fit-content;
-
-  font-weight: 800;
-  font-size: 64px;
-
-  &::after
-  {
-    position: absolute;
-    z-index: -1;
-
-    content: "";
-    bottom: 18px;
-    right: -5px;
-    left: -5px;
-    height: 10px;
-    background-color: #fbdc4d;
-  }
-
-  @media (max-width: 768px)
-  {
-    margin-bottom: 54px;
-    font-size: 58px;
-
-    &::after {bottom: 15px;}
-  }
-
-  @media (max-width: 540px)
-  {
-    font-size: 41px;
-
-    &::after {bottom: 11px;}
-  }
-
-  @media (max-width: 414px)
-  {
-    font-size: 42px;
-
-    &::after {bottom: 12px;}
-  }
-
-  @media (max-width: 320px)
-  {
-    margin-bottom: 44px;
-    font-size: 42px;
-
-    &::after {bottom: 11px;}
-  }
 }
 
 .section-portfolio__nav
@@ -145,6 +88,7 @@
   overflow: hidden;
 
   background-color: #fdd446;
+  transition: 0.7s ease;
 
   cursor: pointer;
 
@@ -203,11 +147,16 @@
 
 .content-card__img:hover .button-more:hover
 {
+  transition: 0.5s ease;
   background-color: rgb(212, 66, 59);
   color: #fff;
 }
 
-.content-card__img:hover .button-more:active {opacity: 1;}
+.content-card__img:hover .button-more:active
+{
+  transition: 0.5s ease;
+  opacity: 1;
+}
 
 .content-card__title
 {

@@ -6,7 +6,8 @@ body
 {
   margin: 0;
   padding: 0;
-  overflow-x:hidden;
+  position: relative;
+  font-family: "MPLUS 1p";
 }
 
 a, a:hover {text-decoration: none;}
@@ -113,6 +114,69 @@ button
   &::after {right: 50%;}
 
   &::before {left: 50%;}
+
+  @media (max-width: 765px)
+  {
+    &::after, &::before
+    {
+      background-color: white;
+    }
+  }
 }
 
 .animate-line:hover::after, .animate-line:hover::before {width: 50%;}
+
+.section__title
+{
+  position: relative;
+  z-index: 2;
+
+  margin-bottom: 66px;
+  width: fit-content;
+
+  font-weight: 800;
+  font-size: 64px;
+
+  &::after
+  {
+    position: absolute;
+    z-index: -1;
+
+    content: "";
+    bottom: 18px;
+    right: -5px;
+    left: -5px;
+    height: 10px;
+    background-color: #fbdc4d;
+  }
+
+  @media (max-width: 768px)
+  {
+    margin-bottom: 54px;
+    font-size: 58px;
+
+    &::after {bottom: 15px;}
+  }
+
+  @media (max-width: 540px)
+  {
+    font-size: 41px;
+
+    &::after {bottom: 11px;}
+  }
+
+  @media (max-width: 414px)
+  {
+    font-size: 42px;
+
+    &::after {bottom: 12px;}
+  }
+
+  @media (max-width: 320px)
+  {
+    margin-bottom: 44px;
+    font-size: 42px;
+
+    &::after {bottom: 11px;}
+  }
+}

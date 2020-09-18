@@ -2,14 +2,14 @@
 {
   padding: 75px 0 238px;
 
-  font-family: "MPLUS 1p";
-
   background-image: url(../img/header/header-bg.jpg);
   background-size: auto;
   background-position: center;
   background-repeat: repeat;
 
-  overflow: hidden;
+  // overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
 
   @media (max-width: 1048px) {padding: 30px 30px 58px;}
 
@@ -73,7 +73,7 @@
 .nav__link
 {
   display: flex;
-  overflow: hidden;
+  // overflow: hidden;
 
   @media (max-width: 768px)
   {
@@ -161,15 +161,35 @@
   &:last-child {margin-right: 0;}
 }
 
-.fa-github-square:hover, .fa-github-square:active {color: #6cc644;}
+.fa-github-square:hover, .fa-github-square:active
+{
+  color: #6cc644;
+  transition: 0.3s;
+}
 
-.fa-instagram:hover, .fa-instagram:active {color: #ea736d;}
+.fa-instagram:hover, .fa-instagram:active
+{
+  color: #ea736d;
+  transition: 0.3s;
+}
 
-.fa-vk:hover, .fa-vk:active {color: #45668e;}
+.fa-vk:hover, .fa-vk:active
+{
+  color: #45668e;
+  transition: 0.3s;
+}
 
-.fa-telegram-plane:hover, .fa-telegram-plane:active {color: #45668e;}
+.fa-telegram-plane:hover, .fa-telegram-plane:active
+{
+  color: #45668e;
+  transition: 0.3s;
+}
 
-.fa-whatsapp:hover, .fa-whatsapp:active {color: #6cc644;}
+.fa-whatsapp:hover, .fa-whatsapp:active
+{
+  color: #6cc644;
+  transition: 0.3s;
+}
 
 .header__toggle-menu
 {
@@ -316,6 +336,11 @@
   color: #393f47;
   font-weight: 500;
   font-size: 24px;
+
+  &::selection
+  {
+    background-color: #fbdc4d;
+  }
 
   @media (max-width: 1048px) {font-size: 22px;}
 
@@ -479,6 +504,11 @@
     position: relative;
     left: 0px;
     bottom: 10px;
+  }
+
+  &::selection
+  {
+    background-color: #fbdc4d;
   }
 
   &:last-child {margin-bottom: 0;}
