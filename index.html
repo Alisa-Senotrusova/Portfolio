@@ -287,23 +287,28 @@
 
             <div class="contacts-content__right">
 
-              <p>Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  напишите мне.</p>
-
               <div class="content-right__desc">
-
-                <div class="right-desc__tags">
-                  <p>Email</p>
-                  <p>Телефон</p>
-                  <p>Адрес</p>
-                </div>
-
-                <div class="right-desc__data">
-                  <p><a href="mailto:a.senotrusova@gmail.com">a.senotrusova@gmail.com</a></p>
-                  <p>89832488292</p>
-                  <p>Россия, Иркутск</p>
-                </div>
-
+                <p>Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  напишите мне.</p>
               </div>
+
+              <ul class="content-right__connection">
+
+                <li class="right-connection__item">
+                  <p>Email</p>
+                  <a href="mailto:a.senotrusova@gmail.com">a.senotrusova@gmail.com</a>
+                </li>
+
+                <li class="right-connection__item">
+                  <p>Телефон</p>
+                  <a href="tel:89832488292">89832488292</a>
+                </li>
+
+                <li class="right-connection__item">
+                  <p>Адрес</p>
+                  <p>Россия, Иркутск</p>
+                </li>
+
+              </ul>
 
               <div class="content-right__socials">
 
@@ -317,7 +322,30 @@
 
             </div>
 
+            <div class="contacts-content__dots"><img src="./img/contacts/contacts-dots.png" alt=""></div>
+
             <div class="contacts-content__left">
+
+              <form class="content-left__form">
+
+                <div class="form__item">
+                  <input class="form-field" type="text" name="userName">
+                  <span class="fake-placeholder">Ваше имя</span>
+                </div>
+
+                <div class="form__item">
+                  <input class="form-field" type="text" name="email">
+                  <span class="fake-placeholder">Ваш email</span>
+                </div>
+
+                <div class="form__item">
+                  <textarea class="form-field" name="message"></textarea>
+                  <span class="fake-placeholder">Текст сообщения</span>
+                </div>
+
+                <button class="form__button">Отправить</button>
+
+              </form>
 
             </div>
 
@@ -328,6 +356,21 @@
       </section>
 
     </main>
+
+    <footer class="footer">
+
+      <div class="container">
+
+        <div class="footer-author">&copy; 2020 — Алиса Сенотрусова</div>
+
+        <div class="footer-desc">
+          <p>Веб-разработик из Сибири, занимаюсь версткой и созданием сайтов.</p>
+          <p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a href="https://webcademy.ru/" target="_blank">WebCademy.ru</a></p>
+        </div>
+
+      </div>
+
+    </footer>
 
     <script src="./libs/mixitup3/mixitup.min.js"></script>
     <script src="./libs/jquery/jquery-3.5.1.min.js"></script>
