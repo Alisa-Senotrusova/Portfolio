@@ -1964,6 +1964,21 @@ textarea.form-field {
     width: 250px;
   }
 }
+@media (max-width: 769px) {
+  .contact-form__success h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 321px) {
+  .contact-form__success h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 281px) {
+  .contact-form__success h2 {
+    font-size: 18px;
+  }
+}
 .footer {
   padding: 29px 20px 41px;
   background-color: #333333;
